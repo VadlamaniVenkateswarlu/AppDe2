@@ -32,7 +32,7 @@ function Form() {
             body: JSON.stringify(dataToSend),
         };
 
-        let response = await fetch("http://localhost:2727/signUp", reqOptions);
+        let response = await fetch("/signUp", reqOptions);
         let result = await response.json();
         console.log(result);
         alert(result.msg);
@@ -58,7 +58,7 @@ function Form() {
             body: data,
         };
 
-        let response = await fetch("http://localhost:2727/signUp", reqOptions);
+        let response = await fetch("/signUp", reqOptions);
         let result = await response.json();
         console.log(result);
         alert(result.msg);
@@ -85,7 +85,7 @@ function Form() {
             body: data,
         };
 
-        let response = await fetch("http://localhost:2727/signUp", reqOptions);
+        let response = await fetch("/signUp", reqOptions);
         let result = await response.json();
         console.log(result);
         alert(result.msg);
